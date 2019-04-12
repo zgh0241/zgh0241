@@ -188,7 +188,7 @@ class TestCase:
                     try:
                         g.driver.switch_to_default_content()
                         w.current_context = 'NATIVE_APP'
-                        g.driver.get_screenshot_as_file(snapshot_file)
+                        g.driver.get_screenshot_as_file(step['snapshot'])
                     except:
                         logger.exception(
                             '*** save the screenshot is failure ***')
